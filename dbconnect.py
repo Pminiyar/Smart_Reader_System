@@ -2,7 +2,7 @@ import mysql.connector
 
 
 #cnx = mysql.connector.connect(user="ltrsoft", password="Amol@2019", host="ltrdbserver.mysql.database.azure.com", port=3306, database="question", ssl_ca="DigiCertGlobalRootCA.crt.pem", ssl_disabled=False)
-cnx = mysql.connector.connect(user="Vedant", password="Nogja@2004", host="mysql1249.mysql.database.azure.com", port=3306, database="smart_reader", ssl_ca="DigiCertGlobalRootCA.crt.pem", ssl_disabled=False)
+cnx = mysql.connector.connect(user="kiran", password="Nogja@2004", host="mysql1249.mysql.database.azure.com", port=3306, database="smart_reader", ssl_ca="DigiCertGlobalRootCA.crt.pem", ssl_disabled=False)
 print(cnx)
 
 mycursor = cnx.cursor()
