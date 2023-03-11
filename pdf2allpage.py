@@ -1,4 +1,5 @@
 
+
 import tkinter as tk
 from tkinter import END, messagebox
 from tkinter import filedialog
@@ -13,10 +14,7 @@ import requests
 
 import azure.cognitiveservices.speech as speechsdk
 
-
-cnx = mysql.connector.connect(user="Vedant", password="Nogja@2004", host="mysql1249.mysql.database.azure.com",
-                              port=3306, database="smart_reader", ssl_ca="DigiCertGlobalRootCA.crt.pem",
-                              ssl_disabled=False)
+cnx = mysql.connector.connect(user="kiran", password="Kale@2002", host="read.mysql.database.azure.com", port=3306, database="smart", ssl_ca="DigiCertGlobalRootCA.crt.pem", ssl_disabled=False)
 
 mycursor = cnx.cursor()
 
@@ -127,11 +125,11 @@ class SecondPage(tk.Frame):
             # print(file.read())
             # file.close()
 
-            key = "08118a610f8d40cf844e9f0e3d252fbe"  # make sure to replace this with your own API key
+            key = "59a35b07efc34a48984466323bab7af0"  # make sure to replace this with your own API key
             region = "centralindia"  # make sure to replace this with your own service region
             source_language = "en-US"
             target_language = "mr"
-            endpoint = "https://ltr.cognitiveservices.azure.com/"
+            endpoint = "https://centralindia.api.cognitive.microsoft.com/sts/v1.0/issuetoken"
 
             config = sdk.SpeechConfig(subscription=key, region=region)
             synthesizer = sdk.SpeechSynthesizer(speech_config=config)
