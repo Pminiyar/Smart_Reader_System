@@ -3,11 +3,12 @@ import azure.cognitiveservices.speech as sdk
 import requests
 import os
 import azure.cognitiveservices.speech as speechsdk
-key = "08118a610f8d40cf844e9f0e3d252fbe"  #make sure to replace this with your own API key
+key = "59a35b07efc34a48984466323bab7af0"  #make sure to replace this with your own API key
 region = "centralindia"  # make sure to replace this with your own service region
 source_language="en-US"
 target_language="mr"
-endpoint="https://ltr.cognitiveservices.azure.com/"
+endpoint="https://centralindia.api.cognitive.microsoft.com/sts/v1.0/issuetoken"
+
 
 config = sdk.SpeechConfig(subscription=key, region=region)
 synthesizer = sdk.SpeechSynthesizer(speech_config=config)
