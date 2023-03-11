@@ -23,7 +23,7 @@ In our India approximatly 2,10,000 children have severe visual impairmemt or bli
 https://github.com/Pminiyar/Smart_Reader_System
 
 # Video URL
-https://youtu.be/KsPbrn6j2K8
+https://youtu.be/UvNV62BjhEY
 
 # Project Demo URL
 https://youtu.be/vEkeFKKCsXc
